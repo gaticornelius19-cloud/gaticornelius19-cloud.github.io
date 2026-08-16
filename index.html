@@ -1,98 +1,546 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Gati Cornelius — motivation, personal growth, skills and positive inspiration.">
+
+  <title>Gati Cornelius | Motivator, Learner & Personal Brand</title>
+
+  <meta name="description"
+        content="Welcome to the official website of Gati Cornelius — a young learner, motivator and personal brand focused on growth, learning, discipline and positive impact.">
+
   <meta name="author" content="Gati Cornelius">
+
   <meta name="robots" content="index, follow">
-  <title>Gati Cornelius | Motivation & Personal Growth</title>
+
+  <link rel="canonical" href=gaticornelius19@gmail.com 
+
+  <!-- Social sharing -->
+  <meta property="og:title" content="Gati Cornelius | Motivator & Personal Brand">
+  <meta property="og:description"
+        content="Discover Gati Cornelius — learning, motivation, personal growth and positive impact.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gaticornelius19-cloud.github.io/">
+
+  <!-- Simple browser icon -->
+  <link rel="icon" href="data:image/svg+xml,
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+  <rect width='100' height='100' rx='20' fill='%23111827'/>
+  <text x='50' y='68' font-size='55' text-anchor='middle'
+  fill='white' font-family='Arial'>G</text>
+  </svg>">
+
   <style>
-    :root{--ink:#111827;--muted:#5b6472;--paper:#f7f8fb;--card:#fff;--accent:#6d4aff}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
-    nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid #e8eaf0}
-    .nav{max-width:1050px;margin:auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between}
-    .brand{font-weight:800;font-size:19px}.nav a{color:var(--ink);text-decoration:none;margin-left:20px;font-size:14px;font-weight:600}
-    .hero{background:linear-gradient(135deg,#171a2b,#34246d);color:white}
-    .hero-inner{max-width:1050px;margin:auto;padding:105px 22px 95px}
-    .eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:800;opacity:.8}
-    h1{font-size:clamp(44px,8vw,76px);line-height:1.02;margin:15px 0 20px;max-width:780px}
-    .hero p{font-size:20px;max-width:650px;color:#e9e7f7}
-    .btn{display:inline-block;margin-top:18px;padding:13px 20px;border-radius:10px;background:white;color:#20163f;text-decoration:none;font-weight:800}
-    section{max-width:1050px;margin:auto;padding:72px 22px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .card{background:var(--card);padding:28px;border:1px solid #e6e8ef;border-radius:16px;box-shadow:0 8px 25px rgba(17,24,39,.04)}
-    h2{font-size:32px;margin:0 0 14px}.card h3{margin-top:0}.muted{color:var(--muted)}
-    .quote{font-size:28px;font-weight:700;max-width:850px;margin:25px 0}
-    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}.skill{padding:9px 13px;background:#ece9ff;border-radius:999px;font-weight:700;font-size:14px}
-    footer{background:#111827;color:#d9deea;text-align:center;padding:35px 22px}
-    @media(max-width:750px){.nav-links{display:none}.grid{grid-template-columns:1fr}section{padding:55px 20px}.hero-inner{padding:80px 20px}}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8fafc;
+      color: #111827;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .nav-inner {
+      max-width: 1100px;
+      margin: auto;
+      padding: 16px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .brand span {
+      color: #2563eb;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 600;
+      color: #374151;
+    }
+
+    .nav-links a:hover {
+      color: #2563eb;
+    }
+
+    .hero {
+      min-height: 82vh;
+      display: flex;
+      align-items: center;
+      background:
+        radial-gradient(circle at top right, #dbeafe, transparent 35%),
+        linear-gradient(135deg, #eff6ff, #ffffff 55%, #f8fafc);
+    }
+
+    .hero-inner {
+      max-width: 1100px;
+      width: 100%;
+      margin: auto;
+      padding: 80px 22px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 7px 13px;
+      border-radius: 999px;
+      background: #dbeafe;
+      color: #1d4ed8;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      max-width: 850px;
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 1.05;
+      letter-spacing: -3px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: #2563eb;
+    }
+
+    .hero p {
+      max-width: 700px;
+      color: #4b5563;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 20px;
+      border-radius: 10px;
+      font-weight: 700;
+      border: 1px solid #d1d5db;
+      background: white;
+    }
+
+    .btn-primary {
+      background: #2563eb;
+      color: white;
+      border-color: #2563eb;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 85px 22px;
+    }
+
+    .section-title {
+      font-size: 34px;
+      margin-bottom: 12px;
+      letter-spacing: -1px;
+    }
+
+    .section-text {
+      max-width: 700px;
+      color: #6b7280;
+      margin-bottom: 35px;
+    }
+
+    .about-grid,
+    .skills-grid,
+    .vision-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: 0 8px 30px rgba(15, 23, 42, 0.05);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .card p {
+      color: #6b7280;
+    }
+
+    .motivation {
+      background: #111827;
+      color: white;
+      max-width: none;
+    }
+
+    .motivation-inner {
+      max-width: 1100px;
+      margin: auto;
+      padding: 85px 22px;
+      text-align: center;
+    }
+
+    .quote {
+      max-width: 850px;
+      margin: auto;
+      font-size: clamp(28px, 5vw, 48px);
+      line-height: 1.2;
+      font-weight: 800;
+    }
+
+    .quote-author {
+      margin-top: 22px;
+      color: #cbd5e1;
+    }
+
+    .skills-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .skill {
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .skill-icon {
+      width: 55px;
+      height: 55px;
+      margin: 0 auto 15px;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      background: #dbeafe;
+      color: #1d4ed8;
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    .contact {
+      background: #eff6ff;
+      max-width: none;
+    }
+
+    .contact-inner {
+      max-width: 1100px;
+      margin: auto;
+      padding: 85px 22px;
+    }
+
+    .contact-box {
+      background: white;
+      border-radius: 20px;
+      padding: 35px;
+      border: 1px solid #dbeafe;
+    }
+
+    .contact-box p {
+      color: #6b7280;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    @media (max-width: 800px) {
+      .nav-inner {
+        flex-direction: column;
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+
+      .about-grid,
+      .vision-grid,
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        letter-spacing: -2px;
+      }
+    }
   </style>
 </head>
+
 <body>
-<nav>
-  <div class="nav">
-    <div class="brand">Gati Cornelius</div>
-    <div class="nav-links">
-      <a href="#about">About</a><a href="#motivation">Motivation</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+
+      <a href="#home" class="brand">
+        Gati <span>Cornelius</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#motivation">Motivation</a>
+        <a href="#skills">Skills</a>
+        <a href="#vision">Vision</a>
+        <a href="#contact">Contact</a>
+      </div>
+
     </div>
+  </nav>
+
+
+  <!-- Hero -->
+  <header class="hero" id="home">
+    <div class="hero-inner">
+
+      <span class="eyebrow">WELCOME TO MY OFFICIAL WEBSITE</span>
+
+      <h1>
+        I'm <span>Gati Cornelius.</span>
+        <br>
+        Learning. Growing. Inspiring.
+      </h1>
+
+      <p>
+        Welcome to my personal space on the web — a place where I share
+        motivation, learning, personal growth, ideas and the journey
+        toward becoming better every day.
+      </p>
+
+      <div class="buttons">
+        <a class="btn btn-primary" href="#about">Discover More</a>
+        <a class="btn" href="#contact">Get In Touch</a>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- About -->
+  <section id="about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <p class="section-text">
+      I'm Gati Cornelius. I believe that growth comes from learning,
+      discipline, consistency and the willingness to keep moving forward.
+      This website represents my journey, ideas and goals.
+    </p>
+
+    <div class="about-grid">
+
+      <div class="card">
+        <h3>Learning</h3>
+        <p>
+          I believe there is always something new to learn.
+          Every experience can become an opportunity to grow.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Mindset</h3>
+        <p>
+          A strong mindset helps us face challenges, stay focused
+          and keep working toward meaningful goals.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Growth</h3>
+        <p>
+          My goal is to keep improving, developing useful skills
+          and becoming a better version of myself.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Motivation -->
+  <div class="motivation" id="motivation">
+
+    <div class="motivation-inner">
+
+      <p class="quote">
+        "You don't have to have everything figured out.
+        Just keep learning, keep growing and keep moving forward."
+      </p>
+
+      <p class="quote-author">
+        — Gati Cornelius
+      </p>
+
+    </div>
+
   </div>
-</nav>
 
-<header class="hero">
-  <div class="hero-inner">
-    <div class="eyebrow">Motivation • Growth • Purpose</div>
-    <h1>Keep moving. Keep learning. Keep becoming.</h1>
-    <p>Welcome to the official personal page of <strong>Gati Cornelius</strong> — a space for motivation, personal growth and positive ideas that encourage people to believe in themselves.</p>
-    <a class="btn" href="#motivation">Explore the page</a>
+
+  <!-- Skills -->
+  <section id="skills">
+
+    <h2 class="section-title">Learning & Skills</h2>
+
+    <p class="section-text">
+      These are some of the areas I value as I continue developing
+      myself and preparing for the future.
+    </p>
+
+    <div class="skills-grid">
+
+      <div class="card skill">
+        <div class="skill-icon">C</div>
+        <p>Communication</p>
+      </div>
+
+      <div class="card skill">
+        <div class="skill-icon">L</div>
+        <p>Learning</p>
+      </div>
+
+      <div class="card skill">
+        <div class="skill-icon">T</div>
+        <p>Technology</p>
+      </div>
+
+      <div class="card skill">
+        <div class="skill-icon">G</div>
+        <p>Growth</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Vision -->
+  <section id="vision">
+
+    <h2 class="section-title">My Vision</h2>
+
+    <p class="section-text">
+      I want to use knowledge, creativity and consistency to build
+      something meaningful and make a positive difference.
+    </p>
+
+    <div class="vision-grid">
+
+      <div class="card">
+        <h3>Learn</h3>
+        <p>
+          Continue developing knowledge and discovering new opportunities.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Build</h3>
+        <p>
+          Turn ideas into useful projects and experiences.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Inspire</h3>
+        <p>
+          Encourage others to believe in themselves and keep growing.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Contact -->
+  <div class="contact" id="contact">
+
+    <div class="contact-inner">
+
+      <div class="contact-box">
+
+        <h2 class="section-title">Let's Connect</h2>
+
+        <p>
+          Thank you for visiting my website. If you would like to connect,
+          collaborate or share an idea, I'd be happy to hear from you.
+        </p>
+
+        <a class="btn btn-primary"
+           href="mailto:YOUR-EMAIL@example.com">
+          Contact Me
+        </a>
+
+      </div>
+
+    </div>
+
   </div>
-</header>
 
-<main>
-<section id="about">
-  <h2>About Gati Cornelius</h2>
-  <p class="muted">I’m Gati Cornelius, and I’m passionate about learning, self-improvement and encouraging people to keep going even when progress feels slow. This page is a growing personal platform where I share ideas about motivation, discipline, confidence, learning and success.</p>
-  <p class="muted">My goal is simple: to keep developing my skills while sharing positive messages that can help others move forward.</p>
-</section>
 
-<section id="motivation">
-  <h2>Motivation</h2>
-  <div class="card">
-    <p class="quote">“You do not have to have everything figured out before you take the next step.”</p>
-    <p class="muted">Progress starts with one decision, one lesson and one step at a time.</p>
-  </div>
-</section>
+  <!-- Footer -->
+  <footer>
 
-<section id="skills">
-  <h2>Learning & Skills</h2>
-  <p class="muted">I’m interested in developing a broad range of useful skills and continuing to learn throughout my journey.</p>
-  <div class="skills">
-    <span class="skill">Communication</span><span class="skill">Leadership</span><span class="skill">Personal Development</span>
-    <span class="skill">Technology</span><span class="skill">Creativity</span><span class="skill">Problem Solving</span>
-    <span class="skill">Teamwork</span><span class="skill">Entrepreneurship</span><span class="skill">Continuous Learning</span>
-  </div>
-</section>
+    <p>
+      © 2026 <strong>Gati Cornelius</strong>.
+      All rights reserved.
+    </p>
 
-<section>
-  <h2>My Vision</h2>
-  <div class="grid">
-    <div class="card"><h3>Learn</h3><p class="muted">Keep building knowledge and practical skills.</p></div>
-    <div class="card"><h3>Grow</h3><p class="muted">Turn challenges into lessons and opportunities.</p></div>
-    <div class="card"><h3>Inspire</h3><p class="muted">Share positive ideas that encourage others to move forward.</p></div>
-  </div>
-</section>
+    <p>
+      Learning • Growth • Motivation • Impact
+    </p>
 
-<section id="contact">
-  <h2>Connect</h2>
-  <p class="muted">For collaborations or professional enquiries, connect with Gati Cornelius through a public social profile or professional contact method.</p>
-  <p><strong>Public profile links can be added here.</strong></p>
-</section>
-</main>
+  </footer>
 
-<footer>
-  <div><strong>Gati Cornelius</strong></div>
-  <div>Motivation • Personal Growth • Continuous Learning</div>
-  <small>© 2026 Gati Cornelius. All rights reserved.</small>
-</footer>
 </body>
 </html>
